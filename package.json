@@ -1,0 +1,29 @@
+{
+  "name": "@cnlabs/yandexmq-rest",
+  "version": "1.0.0",
+  "description": "library than decorates yandex db dynamodb rest api in lightweight style ",
+  "main": "index.js",
+  "keywords": [
+    "yandex-cloud",
+    "yandex-database",
+    "dynamodb"
+  ],
+  "author": "Igor E. Mikhaylyuk <migger@yandex.ru>",
+  "license": "ISC",
+  "repository": "git@github.com:cnlabs-rus/yandexdb-rest.git",
+  "files": [
+    "**/*"
+  ],
+  "dependencies": {
+    "aws4-axios": "^2.0.1",
+    "axios": "^0.21.0",
+    "querystring": "^0.2.0",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
