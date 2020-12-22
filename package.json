@@ -1,6 +1,6 @@
 {
   "name": "@cnlabs/yandexmq-rest",
-  "version": "1.3.0",
+  "version": "1.5.0",
   "description": "library than decorates yandex db dynamodb rest api in lightweight style ",
   "main": "index.js",
   "keywords": [
