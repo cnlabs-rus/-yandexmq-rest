@@ -25,7 +25,6 @@ module.exports = class {
     async query(target, request) {
         request.Action = target;
         request.Version = '2012-11-05';
-        request.QueueUrl = this.options.endpoint;
         if (this.options.verbose) {
             console.log({target, request});
         }
