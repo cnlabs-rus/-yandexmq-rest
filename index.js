@@ -32,13 +32,11 @@ module.exports = class {
             validateStatus: () => true
         }).then(async (response) => {
             if (response.status > 299) {
-                console.log(response.status);
-                console.log(response.data);
+                console.log(response.status, "\n", response.data);
                 throw new Error('Error while sending request');
             }
             if (this.options.verbose) {
-                console.log(response.status);
-                console.log(response.data);
+                console.log(response.status, "\n", response.data);
             }
             return await new Promise((resolve, reject) => parseString(response.data, (e, d) => e && reject(e) || resolve(d)));
         });
